@@ -8,11 +8,17 @@ $ hugo server
 Push content repo: 
 
 $ git push -u origin master 
+
 $ hugo
+
 $ cd public
+
 $ git add --all
+
 $ git commit -m ""
+
 $ git push origin master
+
 $ cd .. 
 
 
@@ -24,7 +30,7 @@ New Author:
 hugo new content/authors/firstname-lastname
 
 New Publication:
-$ hugo new --kind publication publication/<my-publication>
+$ hugo new --kind publication publication/my-publication-name
 
 
 New Project: 
