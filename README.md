@@ -1,6 +1,7 @@
 ## Test
 
 $ hugo 
+
 $ hugo server
 
 ## Deployment
@@ -8,17 +9,11 @@ $ hugo server
 Push content repo: 
 
 $ git push -u origin master 
-
 $ hugo
-
 $ cd public
-
 $ git add --all
-
 $ git commit -m ""
-
 $ git push origin master
-
 $ cd .. 
 
 
@@ -26,15 +21,22 @@ $ cd ..
 
 Docs: https://wowchemy.com/docs/content/projects/
 
-New Author: 
-hugo new content/authors/firstname-lastname
+### Authors 
+$ hugo new content/authors/firstname-lastname
 
-New Publication:
+### Publications
+To add one at a time: 
+
 $ hugo new --kind publication publication/my-publication-name
 
+To add multiple: 
 
-New Project: 
-hugo new  --kind project project/my-project-name
+- Add a bib file containing multiple publications to static/files/<author.bib>
+- Import bibs: $ academic import --bibtex static/files/<author.bib>
+- Edit files 
+
+### Projects
+$ hugo new  --kind project project/my-project-name
 
 
 
